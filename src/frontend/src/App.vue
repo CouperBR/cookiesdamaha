@@ -1,35 +1,37 @@
 <template>
   <span>
-    <header>
+    <header class="main">
       <nav-bar logo="Cookies da Maha" url="#"/>    
     </header>
-    <main>
+    <main class="main">
+      
 <div class="container"> 
       <div class="container"> 
         <grid-vue tamanho="12">
-                <div class="carousel">
-                  <a class="carousel-item" href="#one!"><img src="http://localhost:8080/static/img/1.e3f56b3.jpeg" alt="" class="circle responsive-img"></a>
-                  <a class="carousel-item" href="#two!"><img src="http://localhost:8080/static/img/2.dc0ac4f.jpeg" alt="" class="circle responsive-img"></a>
-                  <a class="carousel-item" href="#three!"><img src="http://localhost:8080/static/img/3.ad78c4d.jpeg" alt="" class="circle responsive-img"></a>
-                  <a class="carousel-item" href="#four!"><img src="http://localhost:8080/static/img/4.5798ba9.jpeg" alt="" class="circle responsive-img"></a>
-                  <a class="carousel-item" href="#five!"><img src="http://localhost:8080/static/img/5.0e43097.jpeg" alt="" class="circle responsive-img"></a>
-                </div>        
-              <!-- <img src="https://media.discordapp.net/attachments/779117764199579655/779118361430327326/image0.png?width=556&height=554" alt="" class="circle responsive-img"> -->
+          <homemain-vue/>    
         </grid-vue>
+        <div class="paragrafo">
+        
+        <p class="fa fa-whatsapp"> 71 98524-3440</p>
+        <p class="negrito">Funcionamento</p>
+        <p>Segunda, quarta e sexta: 13:30 à 16:30.</p>
+        </div>
       </div>
     <router-view/>  
 </div>
-
-<h1>BARRA DE OPÇÕES</h1>
-  
+ 
 <div class="container">
+  <div class="paragrafo font-menu ">
+  <h4>Os cookies da Maha</h4>
+  </div>
+
   <cardmain-vue/> 
 </div>
 
 
     </main>
 
-    <footer-vue logo="Social" descricao="Teste de descricao" cor="orange accent-3" ano="2020">
+    <footer-vue logo="Kura Digital" descricao="Artesões da web" cor="orange accent-3" ano="2020">
       <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
       <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
       <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
@@ -46,6 +48,7 @@ import FooterVue from '@/components/layouts/footerVue'
 import GridVue from '@/components/layouts/gridVue'
 import CardmenuVue from '@/components/layouts/cardmenuVue'
 import CardmainVue from '@/components/layouts/cardmainVue'
+import homemainVue from '@/components/layouts/homeMainVue'
 
 export default {
   name: 'App',
@@ -54,7 +57,8 @@ export default {
     FooterVue,
     GridVue,
     CardmenuVue,
-    CardmainVue
+    CardmainVue,
+    homemainVue
   }
 }
 
@@ -69,6 +73,26 @@ export default {
 
 .back-color {
   background-color:dimgray;
+}
+
+.paragrafo {
+  text-align: center;
+}
+
+.negrito{
+  font-weight: bold;
+}
+
+.main{
+  background-color: #f5caae;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.font-menu {
+  font-family: cursive;
+  color: #dc7831;
 }
 
 </style>
