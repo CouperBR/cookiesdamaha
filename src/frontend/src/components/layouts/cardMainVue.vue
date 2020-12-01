@@ -3,8 +3,8 @@
   <div class="row">
     <div class="col s12 m6 l3">
         <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator img-card" src="../../1.jpeg">
+        <div class="card-image waves-effect waves-block materialboxed">
+        <img class="activator img-card materialboxed" width="650" src="../../1.jpeg">
         </div>
         <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Acai</span>
@@ -15,8 +15,8 @@
 
     <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../2.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../2.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie</span>
@@ -28,8 +28,8 @@
 
     <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../3.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../3.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie red dream</span>
@@ -41,8 +41,8 @@
 
     <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../4.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../4.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie tradicional</span>
@@ -54,8 +54,8 @@
 
 <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../6.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../6.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie </span>
@@ -67,8 +67,8 @@
 
 <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../5.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../5.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie B&W</span>
@@ -80,8 +80,8 @@
 
 <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../1.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../1.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Cookie 1</span>
@@ -93,8 +93,8 @@
 
 <div class="col s12 m6 l3">
         <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator img-card" src="../../1.jpeg">
+    <div class="card-image waves-effect waves-block materialboxed">
+      <img class="activator img-card materialboxed" width="650" src="../../1.jpeg">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Cookie 1</span>
