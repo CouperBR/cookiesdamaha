@@ -1,19 +1,20 @@
 <template>
-<div class="">
+<site-template>
 
-</div>
+</site-template>
 
 
 </template>
 
 <script>
 
+import SiteTemplate from '@/templates/SiteTemplate'
 
 
 export default {
   name: '',
   components:{
-   
+   SiteTemplate
   }
 }
 </script>
