@@ -5858,6 +5858,7 @@ body.keyboard-focused .dropdown-content li:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   line-height: 1.5;
@@ -6110,19 +6111,19 @@ label {
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 ::-moz-placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 :-ms-input-placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 ::-ms-input-placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 ::placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 
 /* Text inputs */

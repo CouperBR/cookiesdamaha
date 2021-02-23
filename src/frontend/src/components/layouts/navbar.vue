@@ -2,9 +2,9 @@
   <div>
     <nav class="navbar-new">
         <div class="nav-wrapper container">
-        <a :href="url || '#'" class="brand-logo img-logo"><img src="https://media.discordapp.net/attachments/779117764199579655/779118515726319676/image0.png?width=960&height=335" alt="" class="circle responsive-img"></a>
+        <a :href="url || '/'" class="brand-logo img-logo"><img src="https://media.discordapp.net/attachments/779117764199579655/779118515726319676/image0.png?width=960&height=335" alt="" class="circle responsive-img"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Meus Pedidos</a></li>
+            <li><a href="#/pedido">Meus Pedidos</a></li>
             <li><a data-target="modal1" class="modal-trigger" href="badges.html">Novidades</a></li>
             <!-- Modal Trigger -->
             <li><a  href="collapsible.html">Cardapio</a></li>
@@ -22,7 +22,9 @@
 <script>
 import modalVue from './modalVue.vue'
 export default {
-  components: { modalVue },
+  components: { 
+    modalVue
+  },
   name: 'NavBar',
   props: ['logo','url','cor'],
   data () {

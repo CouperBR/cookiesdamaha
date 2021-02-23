@@ -8,7 +8,7 @@
         </div>
         <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">Acai</span>
-        <p><a href="#">Link para comprar</a></p>
+        <p><a href="#/pedido">Faça seu pedido</a></p>
         </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie</span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>
@@ -33,7 +33,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie red dream</span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie tradicional</span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>
@@ -59,7 +59,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie </span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>
@@ -72,7 +72,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">cookie B&W</span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>
@@ -85,7 +85,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Cookie 1</span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>
@@ -98,7 +98,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Cookie 1</span>
-      <p><a href="#">Link para comprar</a></p>
+      <p><a href="#/pedido">Faça seu pedido</a></p>
     </div>
 
   </div>

@@ -3,33 +3,7 @@
     <header class="main">
       <nav-bar logo="Cookies da Maha" url="#"/>    
     </header>
-    <main class="main">
-      
-<div class="container"> 
-      <div class="container"> 
-        <grid-vue tamanho="12">
-          <homemain-vue/>    
-        </grid-vue>
-        <div class="paragrafo">
-        
-        <p class="fa fa-whatsapp"> 71 98524-3440</p>
-        <p class="negrito">Funcionamento</p>
-        <p>Segunda, quarta e sexta: 13:30 à 16:30.</p>
-        </div>
-      </div>
-    <slot />  
-</div>
- 
-<div class="container">
-  <div class="paragrafo font-menu ">
-  <h4>Os cookies da Maha</h4>
-  </div>
-
-  <cardmain-vue/> 
-</div>
-
-
-    </main>
+    <slot />
 
     <footer-vue logo="Kura Digital" descricao="Artesões da web" cor="orange accent-3" ano="2020">
       <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
@@ -45,20 +19,12 @@
 <script>
 import NavBar from '@/components/layouts/navbar'
 import FooterVue from '@/components/layouts/footerVue'
-import GridVue from '@/components/layouts/gridVue'
-import CardmenuVue from '@/components/layouts/cardmenuVue'
-import CardmainVue from '@/components/layouts/cardmainVue'
-import homemainVue from '@/components/layouts/homeMainVue'
 
 export default {
   name: 'SiteTemplate',
   components:{
     NavBar,
     FooterVue,
-    GridVue,
-    CardmenuVue,
-    CardmainVue,
-    homemainVue
   }
 }
 
