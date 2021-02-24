@@ -33,7 +33,7 @@
     
     <div class="container">
       <div class="paragrafo font-menu ">
-      <h4>Os cookies da Maha</h4>
+      <h4>Os Cookies da Maha</h4>
       </div>
 
       <cardmain-vue/> 

@@ -1,29 +1,30 @@
 <template>
-  <div>
+  <!-- <div>
     <nav class="navbar-new">
         <div class="nav-wrapper container">
         <a :href="url || '/'" class="brand-logo img-logo"><img src="https://media.discordapp.net/attachments/779117764199579655/779118515726319676/image0.png?width=960&height=335" alt="" class="circle responsive-img"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#/pedido">Meus Pedidos</a></li>
-            <li><a data-target="modal1" class="modal-trigger" href="badges.html">Novidades</a></li>
-            <!-- Modal Trigger -->
             <li><a  href="collapsible.html">Cardapio</a></li>
         </ul>
          </div>
     </nav>
-
-<!-- Modal Structure -->
-<modal-vue identificacao="1" novidades_descricao="teste"/>
-
-  </div>
-  
+  </div> -->
+    <nav class="navbar-new">
+      <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+        <a :href="'/'" class="brand-logo img-logo"><img src="https://media.discordapp.net/attachments/779117764199579655/779118515726319676/image0.png?width=960&height=335" alt="" class="circle responsive-img"></a>
+        <ul class="right navbar-nav mr-auto">
+            <li><a href="#/pedido">Meus Pedidos</a></li>  
+            <li><a  href="collapsible.html">Cardapio</a></li>
+        </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
-import modalVue from './modalVue.vue'
+
 export default {
-  components: { 
-    modalVue
+  components: {
   },
   name: 'NavBar',
   props: ['logo','url','cor'],
@@ -47,9 +48,10 @@ export default {
   max-width: 12%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
    .img-logo{
-  max-width: 50%;
+  max-width: 20%;
+  margin-left: -30%;
 }
 }
 
