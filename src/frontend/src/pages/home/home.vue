@@ -74,7 +74,7 @@ export default {
 }
 
 .main{
-  background-color: #f5caae;
+  background-color: #fffafa;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

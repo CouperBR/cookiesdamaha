@@ -14,7 +14,7 @@
       <div class="collapse navbar-collapse container" id="navbarSupportedContent">
         <a :href="'/'" class="brand-logo img-logo"><img src="https://media.discordapp.net/attachments/779117764199579655/779118515726319676/image0.png?width=960&height=335" alt="" class="circle responsive-img"></a>
         <ul class="right navbar-nav mr-auto">
-            <li><a href="#/pedido">Meus Pedidos</a></li>  
+            <li><a href="#/pedido">Fazer Pedido</a></li>  
             <li><a  href="collapsible.html">Cardapio</a></li>
         </ul>
     </div>

@@ -3,55 +3,58 @@
 
   <main class="">
           
-    <!-- <div class="container"> 
-        <div class="container"> 
-          <div class="paragrafo">
-            <h2>Faça seu pedido</h2>  
-            <input type="text" id="nome" placeholder="Seu nome" class="placeholder">
-            <input type="text" id="sabor" placeholder="Sabor">
-            <input type="text" id="tipo_entrega" placeholder="Tipo de entrega">
-           <button type="button" @click="envio_pedido()" class="btn">Enviar Pedido</button>
-          </div>
-    </div> -->
     <div class="container">
        <div class="container"> 
           <div class="paragrafo">
       <h2>Faça seu pedido</h2> 
-
-      <div class="row" id="" v-for="sabor in sabores" :key="sabor.id">
-        <grid-vue tamanho="6" >
-          <div class="input-field" id="form">
-            <select class="icons">
-              <option value="" disabled selected>Selecione um sabor</option>
-              <option value="" data-icon="images/sample-1.jpg">example 1</option>
-              <option value="" data-icon="images/office.jpg">example 2</option>
-              <option value="" data-icon="images/yuna.jpg">example 3</option>
+      
+      <div class="row" v-for="(sabor, index) in sabores" :key="sabor.id">
+        <grid-vue tamanho="4" >
+           <select class="browser-default">
+              <option disabled selected value="">Selecione um sabor</option>
+              <option value="1" >example 1</option>
+              <option value="2" >example 2</option>
+              <option value="3" >example 3</option>
             </select>
-            <label>Sabores</label>
-          </div>
         </grid-vue>
-     
-
-        <grid-vue tamanho="6">
-          <div class="input-field">
-            <select  class="icons">
-              <option value="" disabled selected>Selecione um acréscimo</option>
-              <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
-              <option value="" data-icon="images/office.jpg" class="left">example 2</option>
-              <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+    
+        <grid-vue tamanho="4">
+            <select class="browser-default">
+              <option disabled selected value="">Selecione um Acréscimo</option>
+              <option value="1" >example 1</option>
+              <option value="2" >example 2</option>
+              <option value="3" >example 3</option>
             </select>
-            <label>Acréscimos</label>
-          </div>
-        </grid-vue>  
-      </div>   
-          <button @click="addItem()">add</button>
-          <button type="button" @click="envio_pedido()" class="btn">Enviar Pedido</button>
+        </grid-vue> 
+
+        <grid-vue tamanho="1">
+        <label for="">Valor: 3,00 R$</label>
+        </grid-vue> 
+
+        <grid-vue tamanho="2">
+         <a @click="removeItem(index)" class="waves-effect waves-light btn"><i class="material-icons left">remove</i>Remover</a>
+        </grid-vue> 
+        
+        
+      </div>  
+        
+        
+      <div class="container margin-bot"> 
+        <a @click="addItem()" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Adicione mais um sabor</a>
+       
+        <button type="button" @click="envio_pedido()" class="btn">Enviar Pedido</button>
+      </div>
         </div>
+   
    </div>
+
+
 
 
         <slot /> 
         </div>
+   
+        
     
   </main>
 
@@ -76,7 +79,6 @@ export default {
    CardmainVue,
    homemainVue
   },
-  el: '#form',
   data: function () {
     return {
       sabores: [],
@@ -100,23 +102,13 @@ export default {
       this.sabores.push({
         value: 'teste'
       });
-      console.log(this.sabores);
     },
+    removeItem(index) {
+      this.sabores.splice(index, 1);
+    },
+    
 }
 }
-new Vue({
-  el: '#form',
-  data: {
-    sabores: [],
-  },
-  methods: {
-    addItem() {
-      this.sabores.push({
-        value: ''
-      });
-    }
-  }
-});
 
 </script>
 
@@ -128,7 +120,6 @@ new Vue({
 }
 
 .main{
-  background-color: #f5caae;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -141,5 +132,9 @@ new Vue({
 
 .placeholder{
   color:black;
+}
+
+.margin-bot{
+  margin-bottom: 10px;
 }
 </style>
