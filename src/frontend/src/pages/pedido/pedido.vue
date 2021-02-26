@@ -8,7 +8,7 @@
           <div class="paragrafo">
       <h2>Faça seu pedido</h2> 
       
-      <div class="row" v-for="(sabor, index) in sabores" :key="sabor.id">
+      <div class="row" v-for="sabor in sabores" :key="sabor.id">
         <grid-vue tamanho="4" >
            <select class="browser-default">
               <option disabled selected value="">Selecione um sabor</option>
@@ -27,12 +27,12 @@
             </select>
         </grid-vue> 
 
-        <grid-vue tamanho="1">
+        <grid-vue tamanho="2">
         <label for="">Valor: 3,00 R$</label>
         </grid-vue> 
 
         <grid-vue tamanho="2">
-         <a @click="removeItem(index)" class="waves-effect waves-light btn"><i class="material-icons left">remove</i>Remover</a>
+         <a @click="removeItem(sabor)" class="btn-floating red"><i class="material-icons">remove</i></a>
         </grid-vue> 
         
         
@@ -40,7 +40,7 @@
         
         
       <div class="container margin-bot"> 
-        <a @click="addItem()" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Adicione mais um sabor</a>
+        <a @click="addItem()" class="btn"><i class="material-icons left">add</i>Adicione mais um sabor</a>
        
         <button type="button" @click="envio_pedido()" class="btn">Enviar Pedido</button>
       </div>
@@ -100,11 +100,14 @@ export default {
   },
       addItem() {
       this.sabores.push({
-        value: 'teste'
+        value: ''
       });
     },
-    removeItem(index) {
-      this.sabores.splice(index, 1);
+    removeItem(sabor) {
+      const index = this.sabores.indexOf(sabor);
+        if (index > -1) {
+          this.sabores.splice(index, 1);
+        }
     },
     
 }
