@@ -12,9 +12,7 @@
         <grid-vue tamanho="4" >
            <select class="browser-default">
               <option disabled selected value="">Selecione um sabor</option>
-              <option value="1" >example 1</option>
-              <option value="2" >example 2</option>
-              <option value="3" >example 3</option>
+              <option  v-for="item in items" :key="item.message" value="1" >{{ item.message }}</option>
             </select>
         </grid-vue>
     
@@ -82,6 +80,16 @@ export default {
   data: function () {
     return {
       sabores: [],
+      items:[
+        { message: 'Tradicional' },
+        { message: 'Chocolatudo' },
+        { message: 'Red velvet (com recheio)' },
+        { message: 'B&W (com cobertura de chocolate branco)' },
+        { message: 'Maracujá (com recheio)' },
+        { message: 'Coco queimado (com recheio)' },
+        { message: 'Açaí (com recheio)' },
+        { message: 'Paçoca (com recheio)' }
+      ]
     }
   },
    methods: {
